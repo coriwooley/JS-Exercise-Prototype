@@ -106,10 +106,10 @@ console.log(bodhi.play())
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. window binding: if none of the other bindings apply, will return the window or undefined. (we don't want this)
+  2. implicit binding: when the function is invoked, 'this' refers to what is left of the dot
+  3. explicit binding: call, apply, or bind is used. you can make a function use a certain object with 'this' keyword
+  4. new binding: When creating a new object with a constructor function, using the 'this' in the function is the new binding
 */
 
 
