@@ -83,9 +83,8 @@ function Car(model, milesPerGallon) {
   this.odometer = 0
 }
 Car.prototype.fill = function(gallons){
-  return (this.tank += gallons);
+  this.tank = this.tank += gallons;
 }
-
 /*
   TASK 3
     - Write a Baby constructor subclassing Person.
@@ -109,7 +108,7 @@ console.log(bodhi.play())
   1. window binding: if none of the other bindings apply, will return the window or undefined. (we don't want this)
   2. implicit binding: when the function is invoked, 'this' refers to what is left of the dot
   3. explicit binding: call, apply, or bind is used. you can make a function use a certain object with 'this' keyword
-  4. new binding: When creating a new object with a constructor function, using the 'this' in the function is the new binding
+  4. new binding: When creating a new object with a constructor function, 'this' binds to the NEW object
 */
 
 
